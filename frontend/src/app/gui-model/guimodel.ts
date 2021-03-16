@@ -138,14 +138,22 @@ export class GuiModel {
                         {
                             "id":   "name",
                             "type": "text",
-                            "name": "Name",
+                            "name": { default: "Name" },
+                            "required": true,
+                            "width": 2
+                        },
+                        {
+                            "id":   "name",
+                            "type": "text",
+                            "name": { default: "E-Mail Adresse" },
                             "required": true,
                             "width": 2
                         },
                         {
                             "id": "description",
                             "type": "text",
-                            "name": "Description",
+                            "name": { default: "Frage" },
+                            "required": true,
                             "newRow": true,
                             "maxLength": 4000,
                             "height": 4,
@@ -161,7 +169,8 @@ export class GuiModel {
                         },
                         {
                             "type": "okButton",
-                            "name": "Ok"
+                            "name": { default: "Senden" },
+                            "url": "mailto:cove@zhaw.ch",
                         }
                     ]
                 },
