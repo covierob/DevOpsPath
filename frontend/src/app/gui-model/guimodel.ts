@@ -1492,14 +1492,14 @@ export class GuiModel {
                     "elementList": [
                         {
                             "type": "pageLabel",
-                            "value": "<h4>Willkommen bei DevOps</h4>",
+                            "value": "<h4>Willkommen bei der DevOpsPath-Übung der Woche 4</h4>",
                             "newRow": true
                         },
                         {
                             "type": "button",
                             "name": { default: "Studiengang" },
-                            "icon": "fa-file-alt",
-                            "color": "wet-asphalt",
+                            "icon": "fa-university",
+                            "color": "amethyst",
                             "page": "studyProgramPage",
                             "width": 2,
                             "newRow": true,
@@ -1515,7 +1515,7 @@ export class GuiModel {
                         {
                             "type": "newButton",
                             "name": "NewStudyProgram",
-                            "icon": "fa-user",
+                            "icon": "fa-graduation-cap",
                             "color": "green",
                             "width": 2,
                             "form" : {
@@ -1525,7 +1525,7 @@ export class GuiModel {
                         {
                             "type": "list",
                             "name": "StudyProgram",
-                            "icon": "fa-user",
+                            "icon": "fa-user-graduate",
                             "color": "wet-asphalt",
                             "search": true,
                             "url": "/studyProgram",
