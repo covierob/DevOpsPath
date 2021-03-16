@@ -1558,8 +1558,37 @@ export class GuiModel {
                         },
                         {
                             "type": "newButton",
-                            "name": "NewStudyProgram",
-                            "icon": "fa-graduation-cap",
+                            "name": { default: "Neues Modul" },
+                            "icon": "fa-book-open",
+                            "color": "green",
+                            "width": 2,
+                            "form" : {
+                                "form" : "StudyProgramForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "name": "StudyProgram",
+                            "icon": "fa-user-graduate",
+                            "color": "wet-asphalt",
+                            "search": true,
+                            "url": "/studyProgram",
+                            "form": {
+                                "form": "StudyProgramForm"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "helpdeskPage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": { default: "Neues Modul" },
+                            "icon": "fa-book-open",
                             "color": "green",
                             "width": 2,
                             "form" : {
