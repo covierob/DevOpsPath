@@ -131,6 +131,41 @@ export class GuiModel {
                     ]
                 },
                 {
+                    "id": "helpdeskForm",
+                    "title": { default: "Helpdesk Kontakformular" },
+                    "url": "/studyProgram",
+                    "formFieldList": [
+                        {
+                            "id":   "name",
+                            "type": "text",
+                            "name": "Name",
+                            "required": true,
+                            "width": 2
+                        },
+                        {
+                            "id": "description",
+                            "type": "text",
+                            "name": "Description",
+                            "newRow": true,
+                            "maxLength": 4000,
+                            "height": 4,
+                            "width": 2
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
+                {
                     "id": "StudyProgramForm",
                     "title": "StudyProgram",
                     "url": "/studyProgram",
@@ -1516,8 +1551,10 @@ export class GuiModel {
                             "name": { default: "Helpdesk" },
                             "icon": "fa-info",
                             "color": "turquoise",
-                            "page": "helpdeskPage",
                             "width": 2,
+                            "form" : {
+                                "form" : "helpdeskForm"
+                            }
                         },
                     ]
                 },
@@ -1552,35 +1589,6 @@ export class GuiModel {
                 },
                 {
                     "id": "modulePage",
-                    "elementList": [
-                        {
-                            "type": "backbutton",
-                        },
-                        {
-                            "type": "newButton",
-                            "name": { default: "Neues Modul" },
-                            "icon": "fa-book-open",
-                            "color": "green",
-                            "width": 2,
-                            "form" : {
-                                "form" : "StudyProgramForm"
-                            }
-                        },
-                        {
-                            "type": "list",
-                            "name": "StudyProgram",
-                            "icon": "fa-user-graduate",
-                            "color": "wet-asphalt",
-                            "search": true,
-                            "url": "/studyProgram",
-                            "form": {
-                                "form": "StudyProgramForm"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "helpdeskPage",
                     "elementList": [
                         {
                             "type": "backbutton",
