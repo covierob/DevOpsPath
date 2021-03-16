@@ -1499,15 +1499,59 @@ export class GuiModel {
                             "type": "button",
                             "name": { default: "Studiengang" },
                             "icon": "fa-university",
-                            "color": "amethyst",
+                            "color": "teal",
                             "page": "studyProgramPage",
                             "width": 2,
-                            "newRow": true,
+                        },
+                        {
+                            "type": "button",
+                            "name": { default: "Module" },
+                            "icon": "fa-book",
+                            "color": "green-sea",
+                            "page": "modulePage",
+                            "width": 2,
+                        },
+                        {
+                            "type": "button",
+                            "name": { default: "Helpdesk" },
+                            "icon": "fa-info",
+                            "color": "turquoise",
+                            "page": "helpdeskPage",
+                            "width": 2,
                         },
                     ]
                 },
                 {
                     "id": "studyProgramPage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "NewStudyProgram",
+                            "icon": "fa-graduation-cap",
+                            "color": "green",
+                            "width": 2,
+                            "form" : {
+                                "form" : "StudyProgramForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "name": "StudyProgram",
+                            "icon": "fa-user-graduate",
+                            "color": "wet-asphalt",
+                            "search": true,
+                            "url": "/studyProgram",
+                            "form": {
+                                "form": "StudyProgramForm"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "modulePage",
                     "elementList": [
                         {
                             "type": "backbutton",
