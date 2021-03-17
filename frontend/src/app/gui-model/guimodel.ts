@@ -1577,7 +1577,7 @@ export class GuiModel {
                             "type": "newButton",
                             "name": "NewStudyProgram",
                             "icon": "fa-graduation-cap",
-                            "color": "green",
+                            "color": "yellow",
                             "width": 2,
                             "form" : {
                                 "form" : "StudyProgramForm"
@@ -1606,7 +1606,7 @@ export class GuiModel {
                             "type": "newButton",
                             "name": { default: "Neues Modul" },
                             "icon": "fa-book-open",
-                            "color": "green",
+                            "color": "peter-river",
                             "width": 2,
                             "form" : {
                                 "form" : "StudyProgramForm"
@@ -1615,7 +1615,7 @@ export class GuiModel {
                         {
                             "type": "list",
                             "name": "StudyProgram",
-                            "icon": "fa-user-graduate",
+                            "icon": "fa-book-reader",
                             "color": "wet-asphalt",
                             "search": true,
                             "url": "/studyProgram",
