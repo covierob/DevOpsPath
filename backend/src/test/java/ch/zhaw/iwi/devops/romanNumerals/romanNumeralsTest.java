@@ -27,6 +27,13 @@ public class romanNumeralsTest {
     }
 
     @Test
+    public void testRomanNumerals5() {
+
+        romanNumerals number = new romanNumerals();
+        Assert.assertEquals(5, number.romanToDecimal("V"));
+    }
+
+    @Test
     public void testRomanNumerals18() {
 
         romanNumerals number = new romanNumerals();
