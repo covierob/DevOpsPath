@@ -48,20 +48,6 @@ public class romanNumeralsTest {
     }
 
     @Test
-    public void testRomanNumerals1000() {
-
-        romanNumerals number = new romanNumerals();
-        Assert.assertEquals(1000, number.romanToDecimal("M"));
-    }
-
-    @Test
-    public void testRomanNumerals1900() {
-
-        romanNumerals number = new romanNumerals();
-        Assert.assertEquals(1900, number.romanToDecimal("MCM"));
-    }
-
-    @Test
     public void testRomanNumerals54() {
 
         romanNumerals number = new romanNumerals();
