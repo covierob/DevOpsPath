@@ -46,7 +46,7 @@ public class romanNumeralsTest {
         romanNumerals number = new romanNumerals();
         Assert.assertEquals(623, number.romanToDecimal("DCXXIII"));
     }
-/*
+
     @Test
     public void testRomanNumerals1000() {
 
@@ -60,7 +60,7 @@ public class romanNumeralsTest {
         romanNumerals number = new romanNumerals();
         Assert.assertEquals(1900, number.romanToDecimal("MCM"));
     }
-*/
+
     @Test
     public void testRomanNumerals54() {
 
