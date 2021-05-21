@@ -46,5 +46,47 @@ public class romanNumeralsTest {
         romanNumerals number = new romanNumerals();
         Assert.assertEquals(623, number.romanToDecimal("DCXXIII"));
     }
+
+    @Test
+    public void testRomanNumerals50() {
+
+        romanNumerals number = new romanNumerals();
+        Assert.assertEquals(50, number.romanToDecimal("L"));
+    }
+
+    @Test
+    public void testRomanNumerals54() {
+
+        romanNumerals number = new romanNumerals();
+        Assert.assertEquals(54, number.romanToDecimal("LIV"));
+    }
+
+    @Test
+    public void testRomanNumerals500() {
+
+        romanNumerals number = new romanNumerals();
+        Assert.assertEquals(500, number.romanToDecimal("D"));
+    }
+
+    @Test
+    public void testRomanNumerals567() {
+
+        romanNumerals number = new romanNumerals();
+        Assert.assertEquals(567, number.romanToDecimal("DLXVII"));
+    }
+
+    @Test
+    public void testRomanNumerals1000() {
+
+        romanNumerals number = new romanNumerals();
+        Assert.assertEquals(1000, number.romanToDecimal("M"));
+    }
+
+    @Test
+    public void testRomanNumerals1589() {
+
+        romanNumerals number = new romanNumerals();
+        Assert.assertEquals(1589, number.romanToDecimal("MDLXXXIX"));
+    }
     
 }
