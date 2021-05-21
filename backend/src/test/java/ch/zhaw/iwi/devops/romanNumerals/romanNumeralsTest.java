@@ -41,17 +41,17 @@ public class romanNumeralsTest {
     }
 
     @Test
-    public void testRomanNumerals623() {
-
-        romanNumerals number = new romanNumerals();
-        Assert.assertEquals(623, number.romanToDecimal("DCXXIII"));
-    }
-
-    @Test
     public void testRomanNumerals54() {
 
         romanNumerals number = new romanNumerals();
         Assert.assertEquals(54, number.romanToDecimal("LIV"));
+    }
+
+    @Test
+    public void testRomanNumerals623() {
+
+        romanNumerals number = new romanNumerals();
+        Assert.assertEquals(623, number.romanToDecimal("DCXXIII"));
     }
     
 }
